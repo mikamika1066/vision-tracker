@@ -9,8 +9,13 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(tracker
   src/main.cpp
+  src/TargetManager.cpp
+  src/TrackingBase.cpp
+  src/ArmorTarget.cpp
+  src/SpinningTarget.cpp
   include/data_types.hpp
   include/test_frames.hpp
+  include/TargetManager.hpp
 )
 
 target_include_directories(tracker PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
